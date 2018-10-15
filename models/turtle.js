@@ -12,19 +12,13 @@ module.exports = (Sequelize, sequelize) => {
 			type: Sequelize.STRING
 		},
 		weaponId: {
-			type: Sequelize.INTEGER,
-			references: 'weapons',
-			referencesKey: 'id'
+			type: Sequelize.INTEGER
 		},
 		firstFavoritePizzaId: {
-			type: Sequelize.INTEGER,
-			references: 'pizzas',
-			referencesKey: 'id'
+			type: Sequelize.INTEGER
 		},
 		secondFavoritePizzaId: {
-			type: Sequelize.INTEGER,
-			references: 'pizzas',
-			referencesKey: 'id'
+			type: Sequelize.INTEGER
 		}
 	});
 };
