@@ -10,7 +10,8 @@ module.exports = (Sequelize, config) => {
 			port: config.port,
 			options: {
 				instanceName: config.dialectOptions.instanceName
-			}
+			},
+			logging: false
 		});
 
 	// sequelize = new Sequelize('mssql://cwp_12:cwp_12@ANDREICHAYEUSKI:1433/cwp-12');
